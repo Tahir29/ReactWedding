@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/ReactWedding/static/css/main.bceac233.css",
+    "main.js": "/ReactWedding/static/js/main.f10bb3c7.js",
+    "static/js/787.4ff3cea1.chunk.js": "/ReactWedding/static/js/787.4ff3cea1.chunk.js",
+    "static/media/flower.png": "/ReactWedding/static/media/flower.15c3a131971bc3837a49.png",
+    "static/media/5.jpg": "/ReactWedding/static/media/5.7e28e31f612fc69860d0.jpg",
+    "static/media/5.webp": "/ReactWedding/static/media/5.afd91c12fa6a176a8ba2.webp",
+    "static/media/3.jpg": "/ReactWedding/static/media/3.054db6885811a8b8fb5e.jpg",
+    "static/media/3.webp": "/ReactWedding/static/media/3.4ab060faf99cde81f224.webp",
+    "static/media/4.jpg": "/ReactWedding/static/media/4.0d09683431232ffb46e7.jpg",
+    "static/media/edwardian-script-itc-1361504162-webfont.TTF": "/ReactWedding/static/media/edwardian-script-itc-1361504162-webfont.bf7838a6543a08923c39.TTF",
+    "static/media/2.jpg": "/ReactWedding/static/media/2.468d03222d1f98a3369b.jpg",
+    "static/media/white-flower-bg2.svg": "/ReactWedding/static/media/white-flower-bg2.b2accd5dd95959b8bdfe.svg",
+    "static/media/main-bg.svg": "/ReactWedding/static/media/main-bg.af5df6588dbbae399961.svg",
+    "static/media/snell_roundhand_script-webfont.ttf": "/ReactWedding/static/media/snell_roundhand_script-webfont.0b1998870febd4f43c10.ttf",
+    "static/media/flower.webp": "/ReactWedding/static/media/flower.fee75316aba11f907932.webp",
+    "static/media/1.jpg": "/ReactWedding/static/media/1.d5fe5b72e90b0c3e23c8.jpg",
+    "static/media/4.webp": "/ReactWedding/static/media/4.9b2374c1b40b3a4d62dc.webp",
+    "static/media/2.webp": "/ReactWedding/static/media/2.6568b65b8f9aca05c714.webp",
+    "static/media/1.webp": "/ReactWedding/static/media/1.3381c250c7ffbcac312f.webp",
+    "static/media/avatar.webp": "/ReactWedding/static/media/avatar.b4905241dbfec0fe11dc.webp",
+    "static/media/slick.svg": "/ReactWedding/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/ReactWedding/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/ReactWedding/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "index.html": "/ReactWedding/index.html",
+    "static/media/slick.woff": "/ReactWedding/static/media/slick.295183786cd8a1389865.woff",
+    "main.bceac233.css.map": "/ReactWedding/static/css/main.bceac233.css.map",
+    "main.f10bb3c7.js.map": "/ReactWedding/static/js/main.f10bb3c7.js.map",
+    "787.4ff3cea1.chunk.js.map": "/ReactWedding/static/js/787.4ff3cea1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bceac233.css",
+    "static/js/main.f10bb3c7.js"
+  ]
+}

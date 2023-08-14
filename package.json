@@ -2,7 +2,7 @@
   "name": "wedding",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tahir29.github.io/ReactWedding/",
+  "homepage": "https://Tahir29.github.io/ReactWedding/",
   "dependencies": {
     "@iconify/icons-mdi": "^1.2.46",
     "@testing-library/jest-dom": "^5.16.5",

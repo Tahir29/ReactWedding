@@ -26,7 +26,7 @@ const Home = () => {
             viewport={{ once: true }}
             onViewportEnter={() => setIsInView(true)} className='sectionHome--flower'
         >
-          <img src="/images/flower.png" alt="Flower" onLoad={() => setIsLoaded(true)} />
+          <img src={process.env.PUBLIC_URL + '/images/flower.png'} alt="Flower" onLoad={() => setIsLoaded(true)} />
         </motion.div>
         
         <div className='sectionHome__wrapper'>

@@ -1,0 +1,123 @@
+@import './Color.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', 'Helvetica', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+	font-family: 'edwardian_script_itcregular';
+    src: url('../../public/fonts/edwardian-script-itc-1361504162-webfont.TTF');
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'snell_roundhand_script';
+    src: url('../../public/fonts/snell_roundhand_script-webfont.ttf');
+    font-display: swap;
+}
+
+@mixin img-fluid {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+@mixin section--padding {
+    padding: 6% 0;
+}
+
+@mixin common--heading {
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: $grey;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+}
+
+.container {
+    max-width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} 
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.divider {
+    border-top: 1px solid $lightpurple;
+}
+
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+sub, sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+a {
+    color: inherit;
+    outline: none;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        @extend a
+    }
+}
+
+
+.main--title {
+    font-size: 92px;
+    font-weight: 100;
+    font-family: 'raleway', cursive;
+    color: $purple;
+    margin: 40px 0;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+
+    @media (max-width: 920px) {
+        font-size: 60px;
+		margin: 0 0 30px;
+    }
+
+    .and {
+        color: $lightpurple;
+        font-size: 140px;
+        font-family: 'edwardian_script_itcregular';
+
+        @media (max-width: 920px) {
+		    font-size: 90px;
+        }
+
+        @media (max-width: 600px) {
+            display: block;            
+        }
+    }
+}

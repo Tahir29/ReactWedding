@@ -1,0 +1,88 @@
+@import './main_scss/Color.scss';
+
+/* Home CSS Start */
+.sectionHome {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('../public/images/main-bg.svg') no-repeat center center;
+
+    @media (max-width: 920px) {
+        overflow-y: hidden;
+    }
+
+    &--flower {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        // width: auto;
+        // width: 20%;
+
+        img {
+            @media (max-width: 920px) {
+                width: 50%;
+            }
+
+            @media (max-width: 600px) {
+                width: 30%;
+            }
+        }
+    }
+
+    &__wrapper {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+    }
+
+    &__button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+
+        @media (max-width: 600px) {
+            flex-direction: column;
+            gap: 0;
+        }
+    }
+}
+
+/* Home CSS Ends */
+
+// Page Not Found CSS Start]
+.sectionNoPage  {
+    @extend .sectionHome;
+
+    &__wrapper {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+// Page Not FOund CSS Ends
+
+.page-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: $pink;
+    transform-origin: 0%;
+    z-index: 98;
+}
+
+.privacy-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $pink;
+    z-index: 100;
+}  

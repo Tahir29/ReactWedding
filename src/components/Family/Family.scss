@@ -1,0 +1,126 @@
+@import '../../main_scss/Color.scss';
+@import '../../main_scss/Utility.scss';
+
+.sectionFamily {
+    @include section--padding;
+    
+    &--heading {
+        @include common--heading
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-top: 40px;
+
+        @media (max-width: 991px) {
+            gap: 16px;
+        }
+
+        @media (max-width: 600px) {
+            gap: 0;
+        }
+    }
+
+    &__people {
+        position: relative;
+        margin-bottom: 20px;
+        flex:  0 0 16.66%;
+        max-width: calc(16.66% - 24px);
+
+        @media (max-width: 991px) {
+            flex:  0 0 33.33%;
+            max-width: calc(33.33% - 16px);
+        }
+
+        @media (max-width: 600px) {
+            flex:  0 0 100%;
+            max-width: 100%;
+        }
+
+        &--image {
+            img {
+                @include img-fluid;
+            }
+        }
+
+        &--name {
+            text-align: center;
+
+            p {
+                font-size: 14px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: $pink;
+                margin: 20px 0;
+                min-height: 50px;
+
+                span {
+                    font-size: 11px;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    color: #aaa;
+                    padding-top: 5px;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &__extended {
+        margin-top: 80px;
+
+        @media (max-width: 600px) {
+            margin-top: 20px;
+        }
+    }
+
+    .extended__wrapper {
+        width: 75%;
+        margin: 40px auto 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        @media (max-width: 991px) {
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            margin: 20px auto;
+        }
+
+        &--list {
+            flex: 0 0 50%;
+            max-width: 50%;
+            font-size: 19px;
+            font-weight: normal;
+            font-family: 'raleway', 'Helvetica', sans-serif;
+            text-align: left;
+            color: #6E6E86;
+            margin: 25px 0;
+            padding: 0 10px;
+            -webkit-font-smoothing: antialiased;
+
+            @media (max-width: 600px) {
+                flex: 0 0 100%;
+                max-width: 100%;
+                margin: 16px 0;
+            }
+
+            span {
+                font-size: 11px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: #aaa;
+                padding-top: 5px;
+                display: block;
+            }
+        }
+    }
+}

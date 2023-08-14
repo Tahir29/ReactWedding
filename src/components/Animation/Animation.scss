@@ -1,0 +1,28 @@
+@import '../../main_scss/Color.scss';
+@import '../../main_scss/Utility.scss';
+
+.first,
+.second,
+.third {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    right: 100%;
+}
+
+.first {
+    background-color: $purple;
+    z-index: 30;
+}
+
+.second {
+    background-color: $grey;
+    z-index: 20;
+}
+
+.third {
+    background-color: $lightpurple;
+    z-index: 10;
+}

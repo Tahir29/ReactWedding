@@ -1,0 +1,69 @@
+@import '../../main_scss/Color.scss';
+@import '../../main_scss/Utility.scss';
+
+.sectionEvents {
+    @include section--padding;
+    background: url('../../../public/images/4.jpg') no-repeat center center;
+    background-size: cover;
+
+    &__card {
+        background-color: rgba(255,255,255,.8);
+        padding: 60px 0;
+        margin: 100px 0;
+        text-align: center;
+        font-family: 'Raleway','Helvetica',sans-serif;
+        transition: .5s;
+
+        @media (max-width: 991px) {
+            margin: 40px 0;
+        }
+
+        @media (max-width: 600px) {
+            padding: 40px 16px;
+        }
+
+        &--details {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+
+            @media (max-width: 600px) {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    &--heading {
+        @include common--heading
+    }
+
+    &__data {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+
+        @media (max-width: 600px) {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &--title {
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: $pink;
+            margin: 10px 0;
+        }
+
+        &--content {
+            font-size: 19px;
+            line-height: 30px;
+            color: $grey;
+            margin: 10px 6px;
+            -webkit-font-smoothing: antialiased;
+        }
+    }
+}

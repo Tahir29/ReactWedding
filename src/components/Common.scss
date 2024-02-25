@@ -1,0 +1,103 @@
+@import '../main_scss/Color.scss';
+@import '../main_scss/Utility.scss';
+
+.scrollTop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: $pink;
+    color: $white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 30px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 98;
+
+    &.is-visible {
+        opacity: 1;
+    }
+
+    &:hover {
+        background-color: $darkpurple;
+    }
+
+    @media (max-width: 600px) {
+        padding: 6px 12px;
+    }
+}
+
+
+.sideMenu {
+    &__icon {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: $pink;
+        color: $white;
+        border: none;
+        padding: 10px 16px;
+        font-size: 30px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        z-index: 98;
+
+        &:hover {
+            background-color: $darkpurple;
+        }
+
+        @media (max-width: 600px) {
+            padding: 6px 12px;
+        }
+    }
+
+    &__data {
+        position: fixed;
+        width: 340px;
+        top: 56px;
+        height: calc(100vh - 56px);
+        background-color: $white;
+        z-index: 99;
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            top: 48px;
+            height: calc(100vh - 48px);
+        }
+    }
+
+    &__list {
+        &--item {
+            display: block;
+            height: 100%;
+            color: #5f6f81;
+            text-decoration: none;
+            cursor: pointer;
+            background: transparent;
+            list-style: none;
+            text-transform: none;
+            font-weight: 300;
+            font-family: 'Lato', Arial, sans-serif;
+            font-size: 17px;
+            line-height: 60px;
+            border-bottom: 1px solid #b9c6d4;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease-in-out;
+
+            span {
+                width: 50px;
+                text-align: center;
+            }
+
+            &:hover {
+                color: $white;
+                background-color: #5f6f81;;
+            }
+        }
+    }
+}

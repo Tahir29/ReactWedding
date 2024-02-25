@@ -1,0 +1,58 @@
+@import '../../main_scss/Color.scss';
+@import '../../main_scss/Utility.scss';
+
+.sectionInvitation {
+    @include section--padding;
+    background: url('../../../public/images/main-bg.svg') no-repeat center center;
+    text-align: center;
+
+    &--heading {
+        color: $darkpurple;
+        text-transform: capitalize;
+        font-weight: 100;
+        font-size: 100px;
+        font-family: 'edwardian_script_itcregular';
+        margin: 20px 0 10px;
+
+        @media (max-width: 600px) {
+            font-size: 74px;
+        }
+    }
+
+    &--content {
+        width: 70%;
+        margin: 0 auto;
+
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+
+        p {
+            font-size: 19px;
+            font-family: 'raleway','Helvetica',sans-serif;
+            line-height: 30px;
+            color: $grey;
+            margin: 10px 6px;
+            -webkit-font-smoothing: antialiased;
+            /* text-align: center; */
+        }
+
+        .name {
+            text-transform: capitalize;
+            font-size: 60px;
+            font-weight: 100;
+            line-height: 80px;
+            font-family: 'edwardian_script_itcregular';
+            color: $grey
+        }
+
+        .noGifts {
+            margin-top: 80px;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 24px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+    }
+}
